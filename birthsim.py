@@ -41,7 +41,7 @@ def birthsim(monthly_conception_probability=.2,
                         _conceptions+=1 
 #Randomly draw miscarriage if conception. If the miscarriage is drawn then iterate number of miscarriages
 #            and increase month by average miscarriage amount. If no miscarriage then iterature by 
-#            pregnancy_length + postpartum infertility. Increase child counter '''
+#            pregnancy_length + postpartum infertility. Increase child counter 
             
                         miscarriage = numpy.random.binomial(1, pregnancy_miscarriage_probability, size=None)
                         if miscarriage==1: 
